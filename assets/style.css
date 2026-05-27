@@ -128,7 +128,7 @@ img {
     background:
         linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.9)),
-        url("../assets/img/planeta-terra.jpg");
+        url("../assets/img/img-01-planeta-terra.jpg");
 
     background-size: cover;
     background-position: center;
@@ -367,7 +367,7 @@ img {
     background:
         linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.9)),
-        url("../assets/img/31525266137260707.jpg");
+        url("../assets/img/img-02-terra-de-fundo.jpg");
 
     background-size: cover;
     background-position: center;
