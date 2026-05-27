@@ -1,19 +1,10 @@
-
-/* =========================================================
-   RESET
-========================================================= */
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* =========================================================
-   BODY
-========================================================= */
-
-body{
+body {
 
     font-family: Arial, Helvetica, sans-serif;
 
@@ -26,29 +17,27 @@ body{
     overflow-x: hidden;
 }
 
-/* =========================================================
-   LINKS
-========================================================= */
+/*
+   Links
+ */
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-/* =========================================================
-   IMAGENS
-========================================================= */
+/* 
+   Imagens
+*/
 
-img{
+img {
     width: 100%;
     display: block;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
+/* Header */
 
-.header{
+.header {
 
     width: 100%;
 
@@ -68,22 +57,20 @@ img{
     border-bottom: 1px solid #1b2447;
 }
 
-/* =========================================================
-   LOGO
-========================================================= */
+/* Logo*/
 
-.logo h1{
+.logo h1 {
 
     font-size: 2rem;
 
-    color: #88e3ff;
+    color: #4cc9f0;
 
     letter-spacing: 2px;
 }
 
+/* Nav */
 
-
-.menu{
+.menu {
 
     display: flex;
     align-items: center;
@@ -91,7 +78,7 @@ img{
 
 /* Links menu */
 
-.menu__links{
+.menu__links {
 
     display: flex;
 
@@ -100,44 +87,33 @@ img{
     list-style: none;
 }
 
-.menu__links a{
+.menu__links a {
 
     font-weight: bold;
 
     transition: 0.3s;
 }
 
-.menu__links a:hover{
+.menu__links a:hover {
 
     color: #4cc9f0;
     border: 1px solid #1b2447;
     border-radius: 20px;
 }
 
-/* =========================================================
-   MENU MOBILE
-========================================================= */
-
-.menu__toggle{
-
+/* menu responsivo */
+.menu__responsivo {
     display: none;
-
     background: none;
-
     border: none;
-
     color: white;
-
     font-size: 1.8rem;
-
     cursor: pointer;
 }
 
-/* =========================================================
-   HERO
-========================================================= */
+/*Hero*/
 
-.hero{
+.hero {
 
     min-height: 100vh;
 
@@ -150,8 +126,8 @@ img{
     padding: 2rem;
 
     background:
-        linear-gradient(rgba(0,0,0,0.8),
-        rgba(0,0,0,0.9)),
+        linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.9)),
         url("../assets/img/planeta-terra.jpg");
 
     background-size: cover;
@@ -160,12 +136,12 @@ img{
 
 /* Conteudo hero */
 
-.hero__conteudo{
+.hero__conteudo {
 
     max-width: 850px;
 }
 
-.hero__conteudo h2{
+.hero__conteudo h2 {
 
     font-size: 4rem;
 
@@ -176,7 +152,7 @@ img{
     text-shadow: 0 0 15px rgba(76, 201, 240, 0.5);
 }
 
-.hero__conteudo p{
+.hero__conteudo p {
 
     font-size: 1.2rem;
 
@@ -185,11 +161,9 @@ img{
     color: #d1d1d1;
 }
 
-/* =========================================================
-   BOTÃO
-========================================================= */
+/* botões */
 
-.botao{
+.botao {
 
     display: inline-block;
 
@@ -208,7 +182,7 @@ img{
     box-shadow: 0 0 15px rgba(76, 201, 240, 0.4);
 }
 
-.botao:hover{
+.botao:hover {
 
     transform: translateY(-5px);
 
@@ -217,27 +191,28 @@ img{
 
 /*Titulo das seções*/
 
-.section__titulo{
+.section__titulo {
 
     text-align: center;
 
     margin-bottom: 4rem;
 
-   
+
 }
 
-.section__titulo h2{
+.section__titulo h2 {
 
     font-size: 2.8rem;
 
     color: #4cc9f0;
 
-    text-shadow: 0 0 15px rgba(76, 201, 240, 0.3); ;
+    text-shadow: 0 0 15px rgba(76, 201, 240, 0.3);
+    ;
 }
 
 /* Sobre */
 
-.sobre__projeto{
+.sobre__projeto {
 
     padding: 6rem 8%;
 
@@ -246,7 +221,7 @@ img{
 
 /*Container Sobre*/
 
-.sobre__container{
+.sobre__container {
 
     display: flex;
 
@@ -259,12 +234,12 @@ img{
 
 /* Texto Sobre */
 
-.sobre__texto{
+.sobre__texto {
 
     flex: 1;
 }
 
-.sobre__texto p{
+.sobre__texto p {
 
     margin-bottom: 1.5rem;
 
@@ -274,12 +249,12 @@ img{
 }
 
 
-.sobre__img{
+.sobre__img {
 
     flex: 1;
 }
 
-.sobre__img img{
+.sobre__img img {
 
     border-radius: 20px;
 
@@ -289,14 +264,14 @@ img{
 
 /*Serviços*/
 
-.servicos{
+.servicos {
 
     padding: 6rem 8%;
 }
 
-/*CARDS*/
+/*Cards*/
 
-.cards__container{
+.cards__container {
 
     display: grid;
 
@@ -305,9 +280,9 @@ img{
     gap: 2rem;
 }
 
-/*CARD*/
+/*Cards*/
 
-.card{
+.card {
 
     background-color: #101935;
 
@@ -322,15 +297,16 @@ img{
     transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
 
     transform: translateY(-10px);
 
-    box-shadow: 0 0 25px rgba(76, 201, 240, 0.2);
+    box-shadow: 0 0 25px rgba(76, 201, 240, 0.5);
 }
+
 /* Titulo dos cards */
 
-.card h3{
+.card h3 {
 
     margin-bottom: 1rem;
 
@@ -339,14 +315,14 @@ img{
 
 /*Texto dos cards*/
 
-.card p{
+.card p {
 
     color: #d1d1d1;
 }
 
 /* Beneficios*/
 
-.beneficios{
+.beneficios {
 
     padding: 6rem 8%;
 
@@ -355,7 +331,7 @@ img{
 
 /* Grid beneficios*/
 
-.beneficios__conteudo{
+.beneficios__conteudo {
 
     display: grid;
 
@@ -366,7 +342,7 @@ img{
 
 /*itens dos beneficios*/
 
-.item__beneficio{
+.item__beneficio {
 
     background-color: #101935;
 
@@ -382,29 +358,29 @@ img{
 
 /* Chamada*/
 
-.chamada{
+.chamada {
 
     padding: 7rem 8%;
 
     text-align: center;
 
     background:
-        linear-gradient(rgba(0,0,0,0.8),
-        rgba(0,0,0,0.9)),
+        linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.9)),
         url("../assets/img/31525266137260707.jpg");
 
     background-size: cover;
     background-position: center;
 }
 
-.chamada h2{
+.chamada h2 {
 
     font-size: 3rem;
 
     margin-bottom: 1rem;
 }
 
-.chamada p{
+.chamada p {
 
     margin-bottom: 2rem;
 
@@ -413,7 +389,7 @@ img{
 
 /* Footer*/
 
-.footer{
+.footer {
 
     background-color: #03050f;
 
@@ -424,32 +400,30 @@ img{
     border-top: 1px solid #1f2d5a;
 }
 
-.footer h2{
+.footer h2 {
 
     color: #4cc9f0;
 
     margin-bottom: 1rem;
 }
 
-.footer p{
+.footer p {
 
     color: #a8a8a8;
 
     margin-bottom: 0.5rem;
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* Tablet */
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
 
-    .menu-toggle{
+    .menu__responsivo {
 
         display: block;
     }
 
-    .nav-links{
+    .menu__links {
 
         position: absolute;
 
@@ -471,59 +445,57 @@ img{
         display: none;
     }
 
-    .nav-links.active{
+    .menu__links.active {
 
         display: flex;
     }
 
-    .hero-content h2{
+    .hero__conteudo h2 {
 
         font-size: 2.8rem;
     }
 
-    .about-container{
+    .sobre__container {
 
         flex-direction: column;
     }
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+/* Mobile */
 
-@media(max-width: 480px){
+@media(max-width: 480px) {
 
-    .header{
+    .header {
 
         padding: 1rem 5%;
     }
 
-    .logo h1{
+    .logo h1 {
 
         font-size: 1.5rem;
     }
 
-    .hero-content h2{
+    .hero__conteudo h2 {
 
         font-size: 2.2rem;
     }
 
-    .hero-content p{
+    .hero__conteudo p {
 
         font-size: 1rem;
     }
 
-    .section-title h2{
+    .section__titulo h2 {
 
         font-size: 2rem;
     }
 
-    .cta h2{
+    .chamada h2 {
 
         font-size: 2rem;
     }
 
-    .card{
+    .card {
 
         padding: 2rem;
     }
