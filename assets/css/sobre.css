@@ -1,0 +1,171 @@
+/* =========================
+   HERO SOBRE
+========================= */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 4rem 8%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.9)
+        ),
+        url("../img/img-01-planeta-terra.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__conteudo {
+    max-width: 900px;
+}
+
+.hero__conteudo h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero__conteudo p {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+}
+
+/* =========================
+   CONTEÚDO SOBRE
+========================= */
+
+.sobre__projeto {
+    padding: 6rem 8%;
+}
+
+.sobre__container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sobre__texto {
+    flex: 1;
+}
+
+.sobre__texto p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.sobre__img {
+    flex: 1;
+}
+
+.sobre__img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards__container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+
+    background: #101935;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.beneficios {
+    padding: 6rem 8%;
+}
+
+.beneficios__conteudo {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 1.5rem;
+}
+
+.item__beneficio {
+    background: #101935;
+
+    padding: 2rem;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.item__beneficio:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero__conteudo h2 {
+        font-size: 2.5rem;
+    }
+
+    .sobre__container {
+        flex-direction: column;
+    }
+
+    .section__titulo h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 3rem 5%;
+    }
+
+    .hero__conteudo h2 {
+        font-size: 2rem;
+    }
+
+    .hero__conteudo p {
+        font-size: 1rem;
+    }
+}
