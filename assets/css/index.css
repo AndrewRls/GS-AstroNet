@@ -12,22 +12,11 @@ body {
     overflow-x: hidden;
 }
 
-/*
-   Links
- */
+/*Links*/
 
 a {
     text-decoration: none;
-    color: inherit;
-}
-
-/* 
-   Imagens
-*/
-
-img {
-    width: 100%;
-    display: block;
+    color: none
 }
 
 /*Hero*/
@@ -89,9 +78,9 @@ img {
 /*Cards*/
 
 .cards__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /*Cards*/
