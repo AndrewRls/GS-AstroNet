@@ -26,7 +26,8 @@ a {
         linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.9)),
         url("../img/img-01-planeta-terra.jpg");
- 
+    background-size: cover;
+    background-position: center;
 }
 
 

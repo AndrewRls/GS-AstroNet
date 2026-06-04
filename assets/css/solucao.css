@@ -1,2 +1,96 @@
 @import url(./base.css);
 
+/*=========================== Estilização do hero ===========================*/
+.hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.7)),
+        url("../img/img-14-plantacao-espaco.jpg");
+}
+.hero{
+    background-size: cover;
+    background-position: center;
+}
+.hero__comeco{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.hero__filhos{
+    width: 50%;
+    margin: 10px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.hero__filhos{
+    background-color: #101935;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid #1f2d5a;
+    transition: 0.3s;
+    max-height: 420px;
+}
+.hero__filhos p, .hero__filhos li{
+    color: #d1d1d1;
+
+}
+.hero__filhos:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(76, 201, 240, 0.5);
+}
+/* =============================================== */
+
+/*======================= Adicionando margem para o container do card =====================*/
+.cards__container{
+    margin-bottom: 60px;
+}
+
+/*=============== Estilização dos títulos =====================*/
+.section__titulo{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*============ Testando configuração do Andrew para card de imagem ==================*/
+.sobre__beneficios{
+    padding: 6rem 8%;
+}
+.beneficios{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.beneficios__lista{
+    flex: 1;
+}
+.beneficios__lista li{
+    margin-bottom: 1.1rem;
+    color: #d4d4d4;
+    font-size: 1.1rem;
+}
+.beneficios__img{
+    flex: 1;
+}
+.beneficios__img img{
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(76, 201, 240, 0.2);
+    max-height: 400px;
+}
+/* ======================================== */
+
+/*============================ Estilização do botão para contato =========================== */
+.chamada__contato{
+    text-align: center;
+}
+.ligacao__botao{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+/* ================================================================= */
