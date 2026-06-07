@@ -1,1 +1,191 @@
 @import url(../css/base.css);
+
+/* Pagina Cadastro */
+.container_cadastro {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.titulo_cadastro {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+    color: #ffffff;
+    margin-right:37px;
+}
+
+.section_cadastro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.campo_cadastro {
+    width: 380px;
+    max-width: 90%;
+    padding: 30px;
+    border: 2px solid #111;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo_cadastro legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.campo_cadastro div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo_cadastro label {
+    font-weight: 600;
+}
+
+.campo_cadastro input {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 20px;
+    }
+
+.campo_cadastro button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #111;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.campo_cadastro button:hover {
+    background-color: #333;
+}
+
+.botao_login {
+    font-weight: bold;
+    color: #003033cc;
+    text-decoration: none;
+}
+
+.botao_login:hover {
+    text-decoration: underline;
+}
+
+/* Media Quares */
+@media (max-width: 768px) {
+    .container_login,
+    .container_cadastro {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .titulo_login,
+    .titulo_cadastro {
+        font-size: 2.4rem;
+        margin-bottom: 25px;
+    }
+
+    .section_login,
+    .section_cadastro {
+        width: 100%;
+    }
+
+    .campo_login,
+    .campo_cadastro {
+        width: 100%;
+        max-width: 400px;
+        padding: 25px;
+    }
+
+    .campo_login input,
+    .campo_cadastro input {
+        font-size: 0.95rem;
+        padding: 11px;
+    }
+
+    .campo_login button,
+    .campo_cadastro button {
+        font-size: 0.95rem;
+        padding: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container_login,
+    .container_cadastro {
+        padding: 40px 15px;
+    }
+
+    .titulo_login,
+    .titulo_cadastro {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .campo_login,
+    .campo_cadastro {
+        width: 100%;
+        max-width: 100%;
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .campo_login legend,
+    .campo_cadastro legend {
+        font-size: 1.1rem;
+    }
+
+    .campo_login label,
+    .campo_cadastro label {
+        font-size: 0.95rem;
+    }
+
+    .campo_login input,
+    .campo_cadastro input {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .campo_login button,
+    .campo_cadastro button {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 11px;
+    }
+
+    .campo_login p,
+    .campo_cadastro p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .titulo_login,
+    .titulo_cadastro {
+        font-size: 1.7rem;
+    }
+
+    .campo_login,
+    .campo_cadastro {
+        padding: 18px 14px;
+    }
+
+    .campo_login input,
+    .campo_cadastro input {
+        font-size: 0.85rem;
+    }
+}
