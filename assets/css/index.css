@@ -72,3 +72,145 @@
     text-align: center;
     border: 1px solid #1f2d5a;
 }
+
+/* ==========================================================================
+   MUDANÇA DE GRID PARA FLEX (BENEFÍCIOS)
+   ========================================================================== */
+.beneficios__conteudo {
+    display: flex; /* Removido display: grid */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.item__beneficio {
+    flex: 1;
+    min-width: 220px;
+    max-width: 280px;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE GERAL E MENU HAMBÚRGUER
+   ========================================================================== */
+
+/* Estilo padrão do botão (escondido no Desktop) */
+.menu__responsivo {
+    display: none;
+    background: none;
+    border: none;
+    color: #4cc9f0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE AJUSTADA (SEM ROLAGEM LATERAL)
+   ========================================================================== */
+
+/* Tablets (Telas até 768px) */
+@media (max-width: 768px) {
+    .menu__responsivo {
+        display: block !important;
+    }
+
+    .menu__links {
+        display: none !important; 
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #070b1f;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid #1b2447;
+        z-index: 1000;
+    }
+
+    .menu__links.active {
+        display: flex !important;
+    }
+
+    /* Reduzindo os títulos do Hero e Chamada no Tablet */
+    .hero__conteudo h1,
+    .hero__conteudo h2 {
+        font-size: 2.8rem !important;
+        word-wrap: break-word; /* Força a quebra de palavras se necessário */
+    }
+
+    .chamada h2 {
+        font-size: 2.3rem !important;
+    }
+
+    .sobre__container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .cards__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 450px;
+        max-height: none; 
+    }
+
+    .item__beneficio {
+        max-width: 100%;
+    }
+}
+
+/* Celulares (Telas até 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem 5%;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Ajuste essencial para os títulos não estourarem no celular */
+    .hero__conteudo h1,
+    .hero__conteudo h2 {
+        font-size: 1.8rem !important; /* Tamanho seguro para telas pequenas */
+        line-height: 1.3;
+    }
+
+    .chamada h2 {
+        font-size: 1.6rem !important; /* Tamanho seguro para a chamada de fechamento */
+        line-height: 1.3;
+    }
+
+    .hero__conteudo p,
+    .chamada p {
+        font-size: 1rem;
+    }
+
+    .section__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Reduz o padding das seções para o texto ter mais espaço horizontal */
+    .hero,
+    .sobre__projeto, 
+    .servicos, 
+    .beneficios,
+    .chamada {
+        padding: 4rem 5% !important;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+}

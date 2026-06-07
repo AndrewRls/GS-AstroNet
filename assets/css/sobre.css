@@ -1,9 +1,5 @@
 /* Hero */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 4rem 8%;
     background:
         linear-gradient(
@@ -11,9 +7,6 @@
             rgba(0, 0, 0, 0.7)
         ),
         url("../img/img-11-lua-e-terra.jpg");
-
-    background-size: cover;
-    background-position: center;
 }
 
 .hero__conteudo {
@@ -22,12 +15,6 @@
 
 .hero__conteudo h2 {
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero__conteudo p {
-    font-size: 1.2rem;
-    color: #d1d1d1;
 }
 
 /* Conteúdo Sobre */
@@ -62,7 +49,6 @@
 
 /* Cards */
 .cards__container {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
@@ -73,18 +59,6 @@
     min-width: 250px; 
     max-width: 350px; 
     padding: 2rem;
-    background: #101935;
-    border-radius: 20px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card h3 {
-    margin-bottom: 1rem;
 }
 
 /* Beneficios */
