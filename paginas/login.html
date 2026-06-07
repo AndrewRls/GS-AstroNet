@@ -8,6 +8,9 @@
     <!-- JavaScript do menu hamburguer  -->
     <script src="../assets/JS/menu.js"></script>
 
+    <!-- JavaScript do login -->
+    <script src="../assets/JS/login.js"></script>
+
     <title>Login</title>
 </head>
 
@@ -36,8 +39,39 @@
         </nav>
     </header>
 
-    <main></main>
-    
+    <main class="container__login">
+        <h1 class="titulo_login">Login</h1>
+
+        <section class="section_login">
+
+            <form id="form_login" action="#" method="post">
+                <fieldset class="campo_login">
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <button type="submit">Entrar</button>
+
+                    <p>
+                        Ainda não tem uma conta?
+                        <a class="botao_cadastro" href="../paginas/cadastro.html">Cadastre-se</a>
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
     <footer class="footer">
         <div class="footer__conteudo">
 
