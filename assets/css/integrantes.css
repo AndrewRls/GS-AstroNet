@@ -39,6 +39,10 @@
     gap: 15px;
 }
 
+.cards__container{
+    flex-wrap: wrap;
+}
+
 /*Cards*/
 
 .github:hover{

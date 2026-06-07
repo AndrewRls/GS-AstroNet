@@ -126,7 +126,10 @@ img {
 .menu__links a {
     font-weight: bold;
     transition: 0.3s;
+    padding: 0.5rem 1rem;
 }
+
+
 
 .menu__links a:hover {
     color: #4cc9f0;
@@ -138,7 +141,6 @@ img {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .card {
@@ -207,3 +209,46 @@ img {
     margin-bottom: 0.5rem;
 }
 
+
+
+/* Fazendo menu hamburguer para todas as pgn */
+
+.menu__responsivo {
+    display: none;
+    background: none;
+    border: none;
+    color: #4cc9f0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE AJUSTADA (SEM ROLAGEM LATERAL)
+   ========================================================================== */
+
+/* Tablets (Telas até 768px) */
+@media (max-width: 768px) {
+    .menu__responsivo {
+        display: block !important;
+    }
+
+    .menu__links {
+        display: none !important; 
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #070b1f;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid #1b2447;
+        z-index: 1000;
+    }
+
+    .menu__links.active {
+        display: flex !important;
+    }
+}

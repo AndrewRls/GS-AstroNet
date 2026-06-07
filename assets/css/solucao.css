@@ -99,21 +99,7 @@
 
 /* ===================== TABLETS (até 1024px) ===================== */
 @media screen and (max-width: 1024px) {
-
-    /* Header */
-    .header {
-        padding: 1rem 5%;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .menu__links {
-        gap: 1.2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* Hero */
+   /* Hero */
     .hero {
         padding: 4rem 2rem;
         min-height: auto;
@@ -174,25 +160,6 @@
 
 /* ===================== MOBILE (até 768px) ===================== */
 @media screen and (max-width: 768px) {
-
-    /* Header */
-    .header {
-        padding: 1rem;
-    }
-
-    .logo h1 {
-        font-size: 1.8rem;
-    }
-
-    .menu {
-        width: 100%;
-    }
-
-    .menu__links {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
 
     /* Hero */
     .hero {
@@ -279,16 +246,6 @@
     }
 
     .hero__conteudo p {
-        font-size: 0.95rem;
-    }
-
-    /* Logo */
-    .logo h1 {
-        font-size: 1.5rem;
-    }
-
-    /* Menu */
-    .menu__links a {
         font-size: 0.95rem;
     }
 
