@@ -331,3 +331,32 @@ img {
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   CONFIGURAÇÃO DO MENU RESPONSIVO (COLE NO FINAL DO INDEX.CSS)
+   ========================================================================== */
+@media(max-width: 768px) {
+    .menu__responsivo {
+        display: block; /* Faz o botão ☰ aparecer no celular */
+    }
+
+    .menu__links {
+        display: none; /* Esconde os links no celular para entrarem no modo sanduíche */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #070b1f;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid #1b2447;
+        z-index: 1000;
+    }
+
+    /* Classe que o JavaScript vai ligar e desligar */
+    .menu__links.active {
+        display: flex; 
+    }
+}
