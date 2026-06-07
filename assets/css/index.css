@@ -1,5 +1,18 @@
+/*Gerais e reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/*Links*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #050816;
+    color: #f5f5f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -126,14 +139,12 @@ img {
     background-color: #0a1026;
 }
 
-/*Container Sobre*/
 .sobre__container {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
 
-/* Texto Sobre */
 .sobre__texto {
     flex: 1;
 }
@@ -144,7 +155,6 @@ img {
     font-size: 1.1rem;
 }
 
-/*sobre imagens*/
 .sobre__img {
     flex: 1;
 }
@@ -156,12 +166,11 @@ img {
     object-fit: cover;
 }
 
-/*Serviços*/
+/* Serviços & Cards */
 .servicos {
     padding: 6rem 8%;
 }
 
-/*Cards*/
 .cards__container {
     display: flex;
     flex-direction: row;
@@ -169,27 +178,42 @@ img {
     justify-content: center;
 }
 
+.card {
+    background-color: #101935;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #1f2d5a;
+    transition: 0.3s;
+    flex: 1;
+}
 
-/*estilização de links*/
-.links:hover{
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 25px rgba(76, 201, 240, 0.5);
 }
 
-/* Beneficios*/
+.card h3 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.card p {
+    color: #d1d1d1;
+}
+
+/* Benefícios */
 .beneficios {
     padding: 6rem 8%;
     background-color: #0a1026;
 }
 
-/* Grid beneficios*/
 .beneficios__conteudo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
 }
 
-/*itens dos beneficios*/
 .item__beneficio {
     background-color: #101935;
     padding: 2rem;
@@ -198,8 +222,7 @@ img {
     border: 1px solid #1f2d5a;
 }
 
-
-/* Chamada*/
+/* Chamada para Ação */
 .chamada {
     padding: 7rem 8%;
     text-align: center;
