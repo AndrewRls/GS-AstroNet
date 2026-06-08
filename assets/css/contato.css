@@ -169,3 +169,48 @@
     
 }
 
+@media (max-width: 600px) {
+
+    .opcoescontato {
+        padding: 40px 10px;
+    }
+
+    .blococontato {
+        margin-bottom: 70px;
+    }
+
+    .sectiontitulo h2 {
+        font-size: 32px;
+    }
+
+    .card h2 {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .card p {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .card ul li {
+        font-size: 18px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .card a img {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+    }
+
+    .imagemcontato {
+        width: 95%;
+        height: 300px;
+    }
+}
+
