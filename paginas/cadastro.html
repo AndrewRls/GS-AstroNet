@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="../assets/css/cadastro.css">
+
+    <!-- JavaScript do menu hamburguer  -->
+    <script src="../assets/JS/menu.js" defer></script>
+    <!-- JavaScript do login  -->
+    <script src="../assets/JS/login.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>AstroNet</h1>
+        </div>
+
+        <!-- MENU -->
+        <nav class="menu">
+
+            <button class="menu__responsivo">☰</button>
+
+            <ul class="menu__links" id="menu__links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./integrantes.html">Integrantes</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./solucao.html">Solução</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="container_cadastro">
+
+        <h1 class="titulo_cadastro">Cadastro</h1>
+
+        <section class="section_cadastro">
+
+            <form id="form_cadastro" action="#" method="post">
+                <fieldset class="campo_cadastro">
+
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div>
+                        <label for="confirmar_senha">Confirmar senha:</label>
+                        <input type="password" id="confirmar_senha" name="confirmar_senha"
+                            placeholder="Confirme sua senha" required>
+                    </div>
+
+                    <button type="submit">Cadastrar</button>
+
+                    <p>
+                        Já tem uma conta?
+                        <a class="botao_login" href="./login.html">Faça login</a>
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__conteudo">
+            <h2>AstroNet</h2>
+            <p>
+                Projeto acadêmico desenvolvido para a disciplina
+                Front-End Design Engineering.
+            </p>
+            <p>
+                © 2026 - Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

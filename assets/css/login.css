@@ -1,0 +1,236 @@
+@import url(./base.css);
+
+/* Pagina Login */
+.container_login {
+    margin-top:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.titulo_login {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 90px;
+    color: #ffffff;
+    margin-right:37px;
+}
+
+.body-login{
+    max-height: 500px;
+}
+
+.section_login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.campo_login {
+    width: 350px;
+    max-width: 90%;
+    padding: 30px;
+    border: 2px solid #111;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo_login legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.campo_login div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo_login label {
+    font-weight: bold;
+}
+
+.campo_login input {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.campo_login button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #111;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.campo_login button:hover {
+    background-color: #333;
+}
+
+.botao_cadastro {
+    font-weight: bold;
+    color: #03727acc;
+    text-decoration: none;
+}
+
+.botao_cadastro:hover {
+    text-decoration: underline;
+}
+
+
+/* Tentando estiizar o modal */
+/* ================= MODAL ================= */
+
+#modal_mensagem {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.modal_conteudo {
+    background-color: #101935;
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+
+    border-radius: 15px;
+    border: 1px solid #1f2d5a;
+
+    text-align: center;
+
+    animation: aparecerModal 0.3s ease;
+}
+
+.modal_conteudo h2 {
+    margin-bottom: 15px;
+    color: #4cc9f0;
+}
+
+.modal_conteudo p {
+    margin-bottom: 20px;
+    color: #d1d1d1;
+}
+
+.modal_conteudo button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: #4361ee;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.modal_conteudo button:hover {
+    background-color: #4cc9f0;
+}
+
+/* animação */
+
+@keyframes aparecerModal {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ============================================= */
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .container_login,
+    .container_cadastro {
+        padding: 40px 15px;
+        height: 545px;
+    }
+
+    .titulo_login,
+    .titulo_cadastro {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .campo_login,
+    .campo_cadastro {
+        width: 100%;
+        max-width: 100%;
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .campo_login legend,
+    .campo_cadastro legend {
+        font-size: 1.1rem;
+    }
+
+    .campo_login label,
+    .campo_cadastro label {
+        font-size: 0.95rem;
+    }
+
+    .campo_login input,
+    .campo_cadastro input {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .campo_login button,
+    .campo_cadastro button {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 11px;
+    }
+
+    .campo_login p,
+    .campo_cadastro p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .titulo_login,
+    .titulo_cadastro {
+        font-size: 1.7rem;
+    }
+
+    .campo_login,
+    .campo_cadastro {
+        padding: 18px 14px;
+    }
+
+    .campo_login input,
+    .campo_cadastro input {
+        font-size: 0.85rem;
+    }
+}
