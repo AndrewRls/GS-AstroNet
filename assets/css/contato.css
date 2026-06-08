@@ -141,3 +141,22 @@
     }
 }
 
+@media (max-width: 900px) {
+
+    .conteudocontato {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .card a img {
+        margin-left: 0;
+    }
+    
+}
+
