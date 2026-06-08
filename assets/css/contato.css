@@ -1,3 +1,13 @@
+.hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 5)),
+        url("../img/img-23-astrounauta.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* Área geral dos contatos */
 .opcoes__contato {
     width: 100%;
