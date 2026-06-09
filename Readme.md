@@ -47,15 +47,22 @@ Abaixo está o mapeamento da arquitetura de arquivos do nosso repositório front
 ┣ 📂 assets
 ┃ ┣ 📂 css
 ┃ ┃ ┣ 📄 base.css
+┃ ┃ ┣ 📄 cadastro.css
+┃ ┃ ┣ 📄 contato.css
+┃ ┃ ┣ 📄 faq.css
 ┃ ┃ ┣ 📄 index.css
 ┃ ┃ ┣ 📄 integrantes.css
+┃ ┃ ┣ 📄 login.css
 ┃ ┃ ┣ 📄 sobre.css
 ┃ ┃ ┗ 📄 solucao.css
 ┃ ┣ 📂 img
 ┃ ┃ ┗ 📄 (Imagens institucionais e fotos dos integrantes)
 ┃ ┗ 📂 JS
+┃ ┃ ┣ 📄 faq.js
+┃ ┃ ┣ 📄 login.js
 ┃ ┃ ┗ 📄 menu.js
 ┣ 📂 paginas
+┃ ┣ 📄 cadastro.html
 ┃ ┣ 📄 solucao.html
 ┃ ┣ 📄 sobre.html
 ┃ ┣ 📄 integrantes.html
