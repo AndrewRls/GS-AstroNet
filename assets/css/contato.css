@@ -14,6 +14,7 @@
     padding: 60px 0;
 }
 
+
 /* Bloco inteiro: Parcerias / Dúvidas */
 .bloco__contato {
     width: 100%;
@@ -38,6 +39,7 @@
     justify-content: space-around;
     gap: 50px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 /* Card */
@@ -112,40 +114,11 @@
     border-radius: 10%;
 }
 
-@media (max-width: 1100px) {
-
-    .conteudocontato {
-        gap: 30px;
-    }
-
-    .card {
-        width: 45%;
-        margin-left: 0;
-    }
-
-    .card h2 {
-        font-size: 40px;
-    }
-
-    .card p {
-        font-size: 24px;
-    }
-
-    .card h3 {
-        font-size: 22px;
-    }
-
-    .imagemcontato {
-        width: 450px;
-        height: 450px;
-    }
-}
-
+/* Responsivo */
 @media (max-width: 900px) {
 
-    .conteudocontato {
+    .conteudo__contato {
         flex-direction: column;
-        gap: 40px;
     }
 
     .card {
@@ -158,90 +131,38 @@
         margin-left: 0;
     }
 
-        .imagemcontato {
+    .imagem__contato {
         width: 90%;
-        height: 400px;
+        height: auto;
     }
 
-    .section__titulo h2 {
-        font-size: 38px;
+    .imagem__contato img {
+        height: auto;
     }
-    
 }
+@media (max-width: 768px) {
 
-@media (max-width: 600px) {
-
-    .opcoescontato {
-        padding: 40px 10px;
+    .conteudo__contato {
+        flex-direction: column;
     }
 
-    .blococontato {
-        margin-bottom: 70px;
-    }
-
-    .sectiontitulo h2 {
-        font-size: 32px;
-    }
-
-    .card h2 {
-        font-size: 34px;
-        margin-bottom: 30px;
-    }
-
-    .card p {
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
-
-    .card ul li {
-        font-size: 18px;
-    }
-
-    .card h3 {
-        font-size: 20px;
-        margin-top: 35px;
+    .card {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
     }
 
     .card a img {
-        width: 80px;
-        height: 80px;
         margin-left: 0;
     }
 
-    .imagemcontato {
-        width: 95%;
-        height: 300px;
-    }
-}
-@media (max-width: 400px) {
-
-    .sectiontitulo h2 {
-        font-size: 28px;
+    .imagem__contato {
+        width: 90%;
+        height: auto;
     }
 
-    .card h2 {
-        font-size: 30px;
-    }
-
-    .card p {
-        font-size: 20px;
-    }
-
-    .card ul li {
-        font-size: 16px;
-    }
-
-    .card h3 {
-        font-size: 18px;
-    }
-
-    .card a img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .imagemcontato {
-        height: 250px;
+    .imagem__contato img {
+        height: auto;
     }
 }
 
